@@ -51,3 +51,6 @@ console.log(str3) // Output: "hello sudha" (String Concatenation)
 //console.log(1 + 2 + "2"); // Output: "32" (1 + 2 = 3, then "3" + "2" = "32")
 //console.log(1 + "2" + 2); // Output: "122" (1 + "2" = "12", then "12" + 2 = "122")
 //console.log("1" + 2 + 2); // Output: "122" ("1" + 2 = "12", then "12" + 2 = "122")
+
+let x = "3"
+console.log(++x) // ++"3" wont work
