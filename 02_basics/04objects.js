@@ -45,5 +45,24 @@ console.log(Object.entries(tinderUser)) // less used
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))
 // to check if a property exists in an object
-
 console.log(regularUser.name.hasOwnProperty('first'))
+
+const course = {}
+course.courseName = "JavaScript"
+course.price = 999
+course.instructor = "Hitesh"
+
+console.log(course);
+
+const {price: rokda} = course // de-structuring an object
+console.log(rokda);
+
+
+//json file format is also an object
+// {
+//     "name": "sudhanshu",
+//     "age": 22,
+//     "company": "Larsen & Toubro"
+// }
+
+//json formatter website can be used to study the api code
