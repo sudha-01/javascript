@@ -45,3 +45,5 @@ console.log(Object.entries(tinderUser)) // less used
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))
 // to check if a property exists in an object
+
+console.log(regularUser.name.hasOwnProperty('first'))
