@@ -20,7 +20,7 @@ console.log(this)
 
 function showThis() {
     let username = "Sudhanshu"
-    console.log(this.username) // undefined in Node.js, "Sudhanshu" in browser
+    console.log(this.username) // undefined
     console.log(this) // shows the global scope
 }
 
@@ -28,7 +28,7 @@ showThis()
 
 const Arrow = () => {
     let username = "Sudhanshu"
-    console.log(this.username) // undefined in Node.js, "Sudhanshu" in browser
+    console.log(this.username) // undefined
     console.log(this) // shows the global scope, empty object
 }
 Arrow() // Arrow function does not have its own 'this', it uses the 'this' from the parent scope (means the global scope)
@@ -44,3 +44,8 @@ console.log(addition2(1,2))
 
 const objects = () => ({username: "Sudhanshu", age: 22}) // implicit return with object
 console.log(objects())
+
+//   in arrow function, if using curly braces {} you have to use 'return' keyword
+//   but if use parantheses () you dont need to use return
+//   objects can only be executed through an arrow function under parantheses
+
