@@ -1,12 +1,12 @@
 // if statement
 
-const isUserLoggedIn = false
+const isUserLoggedIn = true
 
 if(isUserLoggedIn){
     console.log("hi");
 }
 else{
-    //console.log("User is still Logged Off");
+    console.log("User is still Logged Off");
     
 }
 
@@ -14,7 +14,7 @@ else{
 // < , > , <= , >= , == , === , != , !==
 
 
-function checkPlayer() {
+(function checkPlayer() {
     const power = 200;
     const input = "X" + "X";
 
@@ -25,19 +25,25 @@ function checkPlayer() {
     else {
         if(power < 150 && input !== "XX"){
             console.log(`Insufficient power and Invalid Input`);
-            return;
         }
-        if(power < 150){
+        else if(power < 150){
             console.log(`Insufficient power`);
         }
         else {
             console.log(`Invalid input`);
         }
     }
-}
-
-checkPlayer();
+})();
 
 //implicit if statement
 const balance = 1000
-if(balance < 1000) console.log("Sufficient Balance"); //can be used for one line of code only
+if(balance < 1000) console.log("Sufficient Balance"); // can be used for one line of code only
+
+const userLoggedInfromGoogle = false;
+const userLoggedInfromFacebook = true;
+
+if(userLoggedInfromGoogle || userLoggedInfromFacebook) {
+    console.log("User is logged in corectly");
+} else {
+    console.log("User is not logged in");
+}
