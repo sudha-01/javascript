@@ -35,6 +35,8 @@ else{
     }
 })();
 
+//console.log(`${power}`); // power is not defined here, as it is scoped to the if block
+
 //implicit if statement
 const balance = 1000
 if(balance < 1000) console.log("Sufficient Balance"); // can be used for one line of code only
