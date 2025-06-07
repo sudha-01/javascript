@@ -1,51 +1,51 @@
-// // for each loop
+// for each loop
 
-// const array = ["sudha","sudhanshu","aditya","ramesh","suresh"]
+const array = ["sudha","sudhanshu","aditya","ramesh","suresh"]
 
-// array.forEach(function (item){console.log(item);
-// }) //regular function
+array.forEach(function (item){console.log(item);
+}) //regular function
 
-// array.forEach( (item) => {console.log(item);
-// }) // arrow function
+array.forEach( (item) => {console.log(item);
+}) // arrow function
 
-// function print(item){
-//     console.log(item);
-// }
+function print(item){
+    console.log(item);
+}
 
-// array.forEach(print) //another way
+array.forEach(print) //another way
 
-// array.forEach((item,index,arr) => {console.log(`${item} is on index ${index} in array}:`, arr);
-// }) //declaring all the three possible parameters
+array.forEach((item,index,arr) => {console.log(`${item} is on index ${index} in array}:`, arr);
+}) //declaring all the three possible parameters
 
-// console.log("\n\n\n");
+console.log("\n\n\n");
 
 
-// const objArr = [
-//     {
-//         name: "Sudhanshu",
-//         age: 21,
-//         company: "Larsen & Toubro"
-//     },
-//     {
-//         name: "Aum",
-//         age: 21,
-//         company: "Ion"
-//     },
-//     {
-//         name: "Tushar",
-//         age: 20,
-//         company: "GoodspaceAI"
-//     },
-//     {
-//         name: "Vedant",
-//         age: 22,
-//         company: "ZS Associates"
-//     }
-// ]
+const objArr = [
+    {
+        name: "Sudhanshu",
+        age: 21,
+        company: "Larsen & Toubro"
+    },
+    {
+        name: "Aum",
+        age: 21,
+        company: "Ion"
+    },
+    {
+        name: "Tushar",
+        age: 20,
+        company: "GoodspaceAI"
+    },
+    {
+        name: "Vedant",
+        age: 22,
+        company: "ZS Associates"
+    }
+]
 
-// objArr.forEach((item) => {
-//     console.log(item.name);
-// })
+objArr.forEach((item) => {
+    console.log(item.name);
+})
 
 
 //exercises for a big database array using forEach
