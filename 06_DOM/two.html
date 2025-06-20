@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    <div class="parent">
+        <div class="day">Mon</div>
+        <div class="day">Tues</div>
+        <div class="day">Wed</div>
+        <div class="day">Thur</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children); // to access children elements of a parent element
+    console.log(parent.children[1].innerText);
+
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerText);
+    } // loop through all the children
+
+    parent.children[3].style.backgroundColor = 'Yellow'
+    parent.children[3].style.color = 'Red'
+
+    console.log(parent.firstElementChild); //first child element
+    console.log(parent.lastElementChild); //last child element
+    const first = document.querySelector('.day') //first element
+    console.log(first)
+    console.log(first.parentElement) // traversing from child to parent element
+    console.log(first.nextElementSibling) // traversing from one child to its next child element
+
+    console.log("Nodes: ",parent.childNodes);
+
+    const arr = parent.childNodes;
+    arr.forEach(item => console.log(item));
+    
+</script>
+</html>
