@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample website</title>
+</head>
+<body style="background-color: #212121; color: #fff">
+    <button onclick="createNewDiv()">Create the div</button>
+</body>
+<script>
+
+    // wrapping div in a function and making it by click of the button
+    function createNewDiv(){
+    const div = document.createElement('div')
+    div.className = 'Main'
+    div.id = Math.round(Math.random()*10 + 1)
+    div.setAttribute("title",'MyTitle')
+    div.style.backgroundColor = 'yellow'
+    div.style.color = 'red'
+    div.style.padding = '10px'
+
+    const insideDiv = document.createTextNode("MY name is Sudhanshu Chaurasia")
+    div.appendChild(insideDiv)
+
+    //attack to the webpage's body
+    document.body.appendChild(div)
+    }
+</script>
+</html>
