@@ -11,13 +11,36 @@
     </ul>
 </body>
 <script>
-    function addLang(langName){
-        const neew = document.createElement('li')
-        neew.innerHTML = `${langName}`
-        document.querySelector('.language').appendChild(neew)
+    //function to add new element into the body
+    function faddLang(langName){
+        const addLang = document.createElement('li')
+        addLang.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(addLang)
     }
-    addLang('python')
-    addLang('ruby')
-    addLang('typescript')
+    faddLang('python')
+    faddLang('typescript')
+    //optimised function :-
+    function optiaddLang(langName){
+        const addLang = document.createElement('li')
+        addLang.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(addLang)
+    }
+    optiaddLang('golang')
+
+
+    // edit an existing element
+    const editlang = document.querySelector('li:nth-child(2)')
+    //editlang.innerHTML = 'rust'    //not optimised
+    const newLi = document.createElement('li')
+    newLi.textContent = 'rust'
+    editlang.replaceWith(newLi)
+    //another method :-
+    const editLang2 = document.querySelector('li:nth-child(1)')
+    editLang2.outerHTML = '<li>C++</li>'
+
+
+    //remove an existing element
+    const delLang = document.querySelector('li:last-child')
+    delLang.remove()
 </script>
 </html>
